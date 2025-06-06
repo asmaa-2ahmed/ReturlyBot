@@ -3,127 +3,116 @@ from nltk.chat.util import Chat, reflections
 pairs = [
     [
         r"(.*)my name is (.*)",
-        ["Hello %2, how can I assist you with your return today?",
-         "Hi %2! Do you need help with a return or exchange?",
-         "%2, thank you for reaching out about your return."]
+        ["Hi %2! 👋 I'm so happy to meet you. How can I make your return process easier today?",
+         "Welcome %2! 🌟 Let's get your return sorted quickly and easily. What can I help with?",
+         "%2, that's a lovely name! I specialize in returns - tell me how I can assist you."]
     ],
     [
-        r"(.*)help(.*) ",
-        ["I can help you with returns, refunds, and exchanges. What do you need?",
-         "Sure! Our return policy allows returns within 30 days. Do you have a specific question?",
-         "How can I assist you with your return today?"]
+        r"(.*)help(.*)",
+        ["I'd be delighted to help! 💖 We can handle returns, refunds, or exchanges. What do you need assistance with?",
+         "You've come to the right place! Our friendly team (and me!) can help with any return questions. What's on your mind?",
+         "Helping you is my favorite thing to do! 🎉 Could you tell me more about what you need help with?"]
     ],
     [
-        r"(.*) your name ?",
-        ["I'm your Return Assistant Bot. How can I help with your return?",
-         "You can call me ReturnBot! I specialize in return policies.",
-         "I'm here to help with returns—what do you need?"]
+        r"(.*)your name(.*)",
+        ["I'm ReturnBuddy, your personal returns assistant! 🤖💙 Think of me as your friendly guide through the return process.",
+         "You can call me ReturnPal! I'm here 24/7 to make returns stress-free for you.",
+         "I'm your Returns Concierge! ✨ My only job is to make your return experience smooth and easy."]
     ],
     [
-        r"how are you (.*) ?",
-        ["I'm here and ready to assist with your return!",
-         "Doing great! Let me help you process your return smoothly."]
+        r"how are you(.*)",
+        ["I'm wonderful, thanks for asking! 💖 Ready and excited to help you with your return.",
+         "I'm doing great! Helping lovely customers like you always puts me in a good mood. 😊",
+         "I'm fantastic! Each return I help with makes me happier. How about you?"]
     ],
     [
-        r"sorry (.*)",
-        ["No worries! Let’s get your return sorted.",
-         "It’s okay—I’m here to help. What’s your return concern?"]
+        r"sorry(.*)",
+        ["No need to apologize at all! 💕 Returns can be confusing - that's why I'm here to help.",
+         "Please don't worry! We'll sort this out together. What exactly do you need help with?",
+         "It's completely okay! Returns happen to the best of us. Let me help make it right."]
     ],
     [
-        r"i'm (.*) (good|well|okay|ok)",
-        ["Glad to hear it! How can I assist with your return today?",
-         "Great! Do you have a return request?"]
+        r"i'm (.*) (good|well|okay|ok|great|fantastic)",
+        ["That's awesome to hear! 😊 Now, how can I assist with your return today?",
+         "Wonderful! Let's keep that positive energy going while we handle your return.",
+         "I'm so glad you're doing well! Shall we take care of that return now?"]
     ],
     [
         r"(hi|hey|hello|hola|holla)(.*)",
-        ["Hello! Need help with a return or refund?",
-         "Hi there! Our return window is 30 days. How can I help?"]
+        ["Hello there! 👋 Welcome to the friendliest return assistance around. What can I do for you today?",
+         "Hi sunshine! 🌞 Ready to make your return process quick and painless?",
+         "Hey friend! 💖 How can I help with your return today?"]
     ],
     [
-        r"what (.*) want ?",
-        ["I want to help you with your return! What’s your issue?",
-         "I’m here to assist with returns—what do you need?"]
+        r"what (.*) want(.*)",
+        ["I just want to see you happy with your return experience! 😊 What can I do to help?",
+         "All I want is to make your return as easy as possible. Where shall we start?",
+         "My only wish is to help you get your return sorted quickly and easily!"]
     ],
     [
         r"(.*)created(.*)",
-        ["I was designed to help customers with returns and refunds.",
-         "My purpose is to assist with return policies. How can I help?"]
+        ["I was specially designed by a team who cares deeply about making returns stress-free for wonderful customers like you! 💖",
+         "My creators built me with one purpose - to make your return experience absolutely delightful!"]
     ],
     [
-        r"(.*) (location|city) ?",
-        ["We process returns from all locations. Where are you returning from?",
-         "Our returns center is in Texas, but we accept returns nationwide."]
+        r"(.*)(location|city)(.*)",
+        ["We happily accept returns from anywhere! 🌎 Our main return center is in sunny Texas, but we've got you covered no matter where you are.",
+         "Location doesn't matter - we'll help with your return wherever you are! Our friendly team works nationwide."]
     ],
-    [
-        r"(.*)raining in (.*)",
-        ["No weather issues here! How can I assist with your return?",
-         "Let’s focus on your return—what do you need help with?"]
-    ],
-    [
-        r"how (.*) health (.*)",
-        ["I’m always operational to help with returns!",
-         "No health issues here—ready to process your return!"]
-    ],
-    [
-        r"(.*)(sports|game|sport)(.*)",
-        ["I’m focused on returns, but I hope your team wins! How can I help with your return?"]
-    ],
-    [
-        r"who (.*) (Cricketer|Batsman)?",
-        ["I specialize in returns—can I assist with yours?"]
-    ],
-    # ===== **RETURN POLICY-SPECIFIC RESPONSES** =====
+    # ===== Enhanced Return Policy Responses =====
     [
         r"(.*)return policy(.*)",
-        ["Our return policy allows returns within **30 days** of purchase. Items must be unused and in original packaging.",
-         "You can return most items within 30 days with a receipt. Need help processing one?",
-         "Returns accepted within 30 days for a full refund. Exclusions may apply."]
+        ["Our customer-friendly policy allows returns within 30 days, no stress! 😊 Items just need to be unused with original packaging. Need help with a specific item?",
+         "We've designed our return policy to be as easy as possible: 30 days for most items, and we'll walk you through every step! What would you like to return?",
+         "Good news! You've got 30 days to return most items. I can help make the process super simple - just tell me what you're returning!"]
     ],
     [
         r"(.*)how to return(.*)",
-        ["You can start a return online via our website or visit a store. Would you like a step-by-step guide?",
-         "1. Log into your account 2. Go to 'Orders' 3. Select 'Return Item' 4. Print the label. Need more details?"]
+        ["Let me guide you through our simple return process: \n1️⃣ Visit our website (I can send you a direct link!) \n2️⃣ Go to 'My Orders' \n3️⃣ Select the item \n4️⃣ Choose your reason \n5️⃣ Print the label \nWould you like me to send you the link to get started?",
+         "I'd love to help you return that! Here's how: \n📱 Online: Quickest method through our app \n🏪 In-store: Bring the item to any location \n📦 By mail: We'll email you a prepaid label \nWhich option works best for you?"]
     ],
     [
         r"(.*)refund(.*)",
-        ["Refunds are processed within **3-5 business days** after we receive your return.",
-         "Once we get your return, your refund will be issued to your original payment method."]
+        ["Your refund will be processed in 3-5 business days after we receive your return - we know you'll appreciate the speedy service! 💸 Would you like me to track it for you once you've sent it back?",
+         "We issue refunds super fast - typically within 3-5 days of getting your return! It will go back to your original payment method. Need help with anything else?"]
     ],
     [
         r"(.*)exchange(.*)",
-        ["We offer exchanges for the same item in a different size/color. Would you like to proceed?",
-         "Exchanges are free if initiated within 30 days. Need help with one?"]
+        ["Exchanges are easy-peasy! 🎉 We can swap for a different size/color at no extra cost. Would you like me to check availability for your preferred option?",
+         "Happy to process an exchange for you! The best part - no additional fees if done within 30 days. What would you like instead?"]
     ],
     [
         r"(.*)no receipt(.*)",
-        ["Without a receipt, we may offer store credit at the current selling price.",
-         "Do you have the credit card used for purchase? We can look it up!"]
+        ["No receipt? No problem! 😊 We can often look up purchases with your email or credit card. Alternatively, we may offer store credit. Want me to check your options?",
+         "Don't worry if you can't find the receipt! We have multiple ways to help - could you tell me how you paid or provide your email address?"]
     ],
     [
-        r"(.*)broken(.*)|(.*)damaged(.*)",
-        ["If your item arrived damaged, we’ll cover return shipping. Please contact us with order details.",
-         "We apologize! Damaged items qualify for a free replacement or refund."]
+        r"(.*)(broken|damaged)(.*)",
+        ["Oh no! 😟 We're so sorry your item arrived damaged. The good news is we'll cover all return costs and get you a replacement or refund immediately. Could you share your order number so I can help faster?",
+         "We hate when this happens! 😔 Please accept our apologies. Damaged items qualify for instant replacement - I'll personally make sure this gets resolved quickly for you."]
     ],
     [
         r"(.*)return label(.*)",
-        ["You can print a return label from our website under 'Order History'. Need a direct link?",
-         "We’ll email you a prepaid return label if eligible. Check your inbox!"]
+        ["I'd be happy to help with your return label! 🌟 You can print it directly from our website, or I can email you a prepaid label right now - which would you prefer?",
+         "Return labels are my specialty! 🏷️ Would you like: \n1. A direct link to print your label \n2. An email with the label attached \n3. Help finding the label in your account?"]
     ],
     [
         r"(.*)late return(.*)",
-        ["Returns after 30 days may not qualify for a refund, but we can check for exceptions.",
-         "Contact our support team—they might approve a late return as a courtesy."]
+        ["While our standard policy is 30 days, we always try to help! 😊 Let me check if we can make an exception - could you tell me why the return is late?",
+         "We understand life gets busy! ⏳ While we can't guarantee late returns, I'm happy to submit a special request to our team. What's the reason for the delay?"]
     ],
     [
-        r"(quit|bye|exit)",
-        ["Thank you for chatting! Visit our Returns page for more help.",
-         "Have a great day! Reach out if you need more return assistance."]
+        r"(quit|bye|exit|goodbye)",
+        ["Thank you for chatting! 💖 Remember, I'm always here if you need return help. Wishing you a wonderful day!",
+         "It's been a pleasure helping! 🌟 Come back anytime for stress-free return assistance. Take care!",
+         "Goodbye friend! 👋 Don't hesitate to return (pun intended 😉) if you need more help!"]
     ],
     [
         r"(.*)",
-        ["I’m here to help with returns—could you clarify your question?",
-         "For return-related questions, visit our Returns FAQ or ask me directly!"]
-    ],
+        ["I'd love to help with your return! 💕 Could you tell me more about what you need?",
+         "Let's focus on making your return easy! 🌟 Could you rephrase your question?",
+         "Returns are my specialty! 😊 How can I assist you today?"]
+    ]
 ]
 
 # Initialize the chatbot
