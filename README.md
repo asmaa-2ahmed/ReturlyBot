@@ -65,8 +65,3 @@ python main.py
 - Telegram account
 - Basic terminal usage
 
----
-
-## 📫 Contact
-- Email: your@email.com
-- GitHub: [asmaa-2ahmed/ReturlyBot](https://github.com/asmaa-2ahmed/ReturlyBot)
