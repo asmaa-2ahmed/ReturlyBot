@@ -1,7 +1,7 @@
 # ReturnlyBot 🤖
 
 <p align="center">
-  <img src="src/images/screen(1).png" alt="ReturnlyBot Demo" width="600"/>
+  <img src="src/images/screen(1).png" alt="ReturnlyBot Demo" width="300"/>
 </p>
 
 ReturnlyBot is a friendly Telegram chatbot that streamlines the return and refund experience for e-commerce customers through natural, rule-based conversations.
