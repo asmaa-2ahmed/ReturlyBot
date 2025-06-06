@@ -1,6 +1,8 @@
 # ReturnlyBot 🤖
 
-![ReturnlyBot Demo](src/images/screen(1).png)
+<p align="center">
+  <img src="src/images/screen(1).png" alt="ReturnlyBot Demo" width="600"/>
+</p>
 
 ReturnlyBot is a friendly Telegram chatbot that streamlines the return and refund experience for e-commerce customers through natural, rule-based conversations.
 
@@ -17,28 +19,39 @@ ReturnlyBot is a friendly Telegram chatbot that streamlines the return and refun
 ## 🚀 Quick Start
 
 ### 1. Get Your Telegram Bot Token
-1. Open Telegram and search for [@BotFather](https://t.me/BotFather)
-2. Send `/newbot` and follow the prompts:
-   - Choose a name for your bot (e.g., `Returnly Assistant`)
-   - Choose a username ending in `bot` (e.g., `ReturnlyHelper_bot`)
-3. After setup, you’ll receive an API token — **copy this** (format: `123456:ABC-DEF1234...`)
 
-### 2. Set Up the Bot
+1. Open Telegram and search for [**@BotFather**](https://t.me/BotFather)
+2. Type `/newbot` and follow the instructions:
+   - Choose a display name (e.g., `Returnly Assistant`)
+   - Choose a username ending in `bot` (e.g., `ReturnlyHelper_bot`)
+3. Copy the API token provided — it looks like this:
+123456789:ABCDefGhIJKlmNoPQRstuvWXyz
+
+yaml
+Copy
+Edit
+
+---
+
+### 2. Set Up and Run the Bot
+
+Open your terminal and run the following:
+
 ```bash
-# Clone the repository
+# Step 1: Clone the repository
 git clone https://github.com/asmaa-2ahmed/ReturlyBot.git
 cd ReturlyBot
 
-# Create environment file with your token
+# Step 2: Create a .env file with your bot token
 echo "TELEGRAM_TOKEN=your_token_here" > .env
 
-# Install dependencies
+# Step 3: Install dependencies
 pip install -r requirements.txt
 
-# Run the bot
+# Step 4: Run the bot
 python main.py
 💬 Example Conversations
-User Input	Bot Response
+You Say	Bot Responds
 “How do I return shoes?”	Step-by-step return instructions
 “Package arrived damaged”	Initiates replacement process
 “Where's my refund?”	Explains refund processing timeline
@@ -48,29 +61,23 @@ Python 3.8 or higher
 
 Telegram account
 
-Basic knowledge of running Python scripts
+Basic terminal usage
 
 📫 Contact
 Email: your@email.com
 GitHub: asmaa-2ahmed/ReturlyBot
 
-Pro Tip: You can further extend the bot with NLP or database support as needed.
-
-markdown
+yaml
 Copy
 Edit
 
 ---
 
-### Summary of Enhancements
-- ✅ Improved structure for readability
-- ✅ Added direct link to [@BotFather](https://t.me/BotFather)
-- ✅ Unified tone and phrasing across sections
-- ✅ Clean Markdown formatting
-- ✅ Maintains visual elements like emojis for scanning
+### ✅ Updates:
+- ✅ **Image resized** using HTML (`width="600"`) so it's centered and not oversized
+- ✅ **Setup steps** formatted for easy copy-pasting (especially in terminal)
+- ✅ Clear **bot token instructions** for beginners
 
-Let me know if you want to add:
-- Deployment instructions (e.g., Railway, Heroku)
-- A `contributing.md`
-- Unit test examples for handlers
+Let me know if you want this as a downloadable `README.md` file or if you’d like to include a GIF or deployment instructions!
+
 
