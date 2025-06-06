@@ -1,38 +1,50 @@
-
 # ReturnlyBot 🤖
 
-<img src="src/images/screen(1).png" alt="ReturnlyBot Demo" width="600"/>
+<p align="center">
+  <img src="src/images/screen(1).png" alt="ReturnlyBot Demo" width="300"/>
+</p>
 
-A friendly Telegram chatbot that simplifies e-commerce returns with natural conversation flow.
+ReturnlyBot is a friendly Telegram chatbot that streamlines the return and refund experience for e-commerce customers through natural, rule-based conversations.
 
-## ⚙️ Set Up and Run the Bot
+---
 
-Follow these steps in your terminal:
+## ✨ Features
+- 🔁 Instant answers about **returns**, **refunds**, and **exchanges**
+- 📦 Handles **damaged or late items** with exception workflows
+- 🧠 Includes **30+ pre-defined response templates**
+- 💬 Seamlessly integrates with **Telegram** for real-time support
 
-### 🔹 Step 1: Clone the repository
+---
+
+## 🚀 Quick Start
+
+### 1. Get Your Telegram Bot Token
+
+1. Open Telegram and search for [**@BotFather**](https://t.me/BotFather)
+2. Type `/newbot` and follow the instructions:
+   - Choose a display name (e.g., `Returnly Assistant`)
+   - Choose a username ending in `bot` (e.g., `ReturnlyHelper_bot`)
+3. Copy the API token provided — it looks like this:
+123456789:ABCDefGhIJKlmNoPQRstuvWXyz
+
+---
+
+### 2. Set Up and Run the Bot
+
+Open your terminal and run the following:
 
 ```bash
+# Step 1: Clone the repository
 git clone https://github.com/asmaa-2ahmed/ReturlyBot.git
 cd ReturlyBot
-```
 
-### 🔹 Step 2: Create a `.env` file with your bot token
-
-```bash
+# Step 2: Create a .env file with your bot token
 echo "TELEGRAM_TOKEN=your_token_here" > .env
-```
 
-> 💡 Replace `your_token_here` with the actual token you get from [@BotFather](https://t.me/BotFather)
-
-### 🔹 Step 3: Install dependencies
-
-```bash
+# Step 3: Install dependencies
 pip install -r requirements.txt
-```
 
-### 🔹 Step 4: Run the bot
-
-```bash
+# Step 4: Run the bot
 python main.py
 ```
 
@@ -40,23 +52,21 @@ python main.py
 
 ## 💬 Example Conversations
 
-| You Say                    | Bot Responds                        |
-|---------------------------|-------------------------------------|
-| “How do I return shoes?”  | Step-by-step return instructions    |
-| “Package arrived damaged” | Initiates replacement process       |
+| You Say                   | Bot Responds                       |
+|---------------------------|------------------------------------|
+| “How do I return shoes?”  | Step-by-step return instructions  |
+| “Package arrived damaged” | Initiates replacement process     |
 | “Where's my refund?”      | Explains refund processing timeline |
 
 ---
 
 ## 📋 Requirements
-
-- Python 3.8 or higher  
-- Telegram account  
-- Basic terminal usage  
+- Python 3.8 or higher
+- Telegram account
+- Basic terminal usage
 
 ---
 
 ## 📫 Contact
-
-**Email**: your@email.com  
-**GitHub**: [asmaa-2ahmed/ReturlyBot](https://github.com/asmaa-2ahmed/ReturlyBot)
+- Email: your@email.com
+- GitHub: [asmaa-2ahmed/ReturlyBot](https://github.com/asmaa-2ahmed/ReturlyBot)
